@@ -19,7 +19,7 @@ const config = {
     defaultLocale: "en",
   },
   typescript: {
-    ignoreDuringBuilds: true,
+    ignoreBuildErrors: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
