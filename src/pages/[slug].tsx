@@ -1,6 +1,7 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { PageLayout } from "~/components/layout";
 import { LoadingPage } from "~/components/loading";
 import { PostView } from "~/components/postview";
@@ -38,6 +39,9 @@ const ProfilePage: NextPage<{ username: string }> = ({ username }) => {
       </Head>
       <PageLayout>
         <div className="relative h-36 border-b border-slate-400 bg-slate-600">
+          <Link href="/" className="pl-4">
+            ←
+          </Link>
           <Image
             src={data.profileImageUrl}
             alt="profile-pic"
